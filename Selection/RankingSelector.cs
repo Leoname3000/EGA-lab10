@@ -14,7 +14,7 @@ public class RankingSelector : ISelector {
             List<Specimen> sortedReplicants = PopulationSorter.insertionSort(replicants);
             List<int> rankings = new List<int>();
             for (int j = 0; j < sortedReplicants.Count; j++)
-                rankings.Add(j);
+                rankings.Add(j + 1);
 
             int localSum = 0;
             List<int> sums = new List<int>();

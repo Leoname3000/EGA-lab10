@@ -65,7 +65,7 @@ public class GeneticAlgorithm {
             Console.WriteLine(reportString);
         }
 
-        reportString = $"   ->  FINAL RESULT  {Printer.specimenString(bestSpecimen)}";
+        reportString = $"   ->  FINAL RESULT  {Printer.specimenString(bestSpecimen)}\n";
         Console.WriteLine(reportString);
     }
 

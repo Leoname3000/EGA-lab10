@@ -2,7 +2,7 @@ namespace EGA_lab10;
 public static class Menu {
     const double crossoverProbability = 0.95;
     const double mutationProbability = 0.05;
-    public static GeneticAlgorithm show() {
+    public static GeneticAlgorithm call() {
 
         IGenerator generator;
         ISplitter splitter = new RandomSplitter();

@@ -1,8 +1,6 @@
 namespace EGA_lab10;
 public class GenotypeModificator : IModificator {
-    const bool printReport = true;
     public Specimen modify(Specimen specimen) {
-        string reportString = $"Modifying {Printer.specimenString(specimen)} -> ";
         while (specimen.weight() > Properties.maxWeight) {
             int minValue = int.MaxValue;
             int removableItemIndex = 0;
@@ -15,9 +13,6 @@ public class GenotypeModificator : IModificator {
                 specimen.encoding[removableItemIndex] = false;
             }
         }
-        reportString += $"{Printer.specimenString(specimen)}";
-        if (printReport == true)
-            Console.WriteLine(reportString);
         return specimen;
     }
 }
